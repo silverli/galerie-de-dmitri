@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700;800&&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap");
+*:focus {
+  outline: 4px solid #9E009E;
+}
+
+html,
+body {
+  background: #666666;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+main, header {
+  margin: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  margin-left: 1rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+article {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+article:nth-of-type(odd) img {
+  align-self: flex-end;
+}
+@media only screen and (min-width: 768px) {
+  article:nth-of-type(odd) img {
+    align-self: auto;
+  }
+}
+article:nth-of-type(odd) .content {
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  article:nth-of-type(odd) .content {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+}
+article:nth-of-type(even) .content {
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  article:nth-of-type(even) .content {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  article {
+    margin: 2rem 1rem;
+    flex-direction: row-reverse;
+  }
+}
+article .content {
+  padding: 2rem 2rem 1rem;
+  background: #cccccc;
+  color: #333333;
+  margin-top: -1.25rem;
+}
+article .content a {
+  display: inline-block;
+  color: black;
+  background: white;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  font-weight: 600;
+  outline: 4px solid transparent;
+  transition: color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+article .content a:focus, article .content a:hover {
+  color: #9E009E;
+  outline: 4px solid #9E009E;
+}
+@media only screen and (min-width: 768px) {
+  article .content {
+    padding: 1rem 2rem;
+    margin-top: 0.625rem;
+  }
+}
+article img {
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 10px 10px #000000;
+}
+article.black img {
+  box-shadow: 10px 10px #ffffff;
+}
+
+footer {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  background: white;
+  padding: 3rem;
+  margin: 3rem 0 0;
+}
