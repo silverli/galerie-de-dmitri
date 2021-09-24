@@ -52,7 +52,7 @@ article:nth-of-type(odd) .content {
 }
 @media only screen and (min-width: 768px) {
   article:nth-of-type(odd) .content {
-    margin-left: 2rem;
+    margin-left: -2rem;
     margin-right: 1rem;
   }
 }
@@ -62,7 +62,7 @@ article:nth-of-type(even) .content {
 }
 @media only screen and (min-width: 768px) {
   article:nth-of-type(even) .content {
-    margin-left: 2rem;
+    margin-left: -2rem;
     margin-right: 1rem;
   }
 }
@@ -98,8 +98,8 @@ article .content a:focus, article .content a:hover {
 }
 @media only screen and (min-width: 768px) {
   article .content {
-    padding: 1rem 2rem;
-    margin-top: 0.625rem;
+    padding: 1rem 2rem 1rem 4rem;
+    margin-top: 1.25rem;
   }
 }
 article img {
